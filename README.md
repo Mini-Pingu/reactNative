@@ -13,7 +13,7 @@
 
 ## No.1: Getting Started
 
-### 2021-01-20
+### 2021-01-20 （早上）
 
 #### 筆記
 
@@ -71,9 +71,33 @@
 #### 重點
 
 1. 在 VS Code 上打 Log
-2. 在 VS Code 上 debug （晚上整理 VS Code debug 筆記）
+2. ***在 VS Code 上 debug*** 
+   1. 在 VS Code 的 debug 中按 create a launch.json
+   2. 選擇 Attach to packager
+   3. 在 VS Code 的 Settings 的 Users 中，修改 react-native.packager.port 改爲 19000 (啓動 Expo 時，Chrome 上顯示 debug 的端口)
+   4. 關閉 Chrome 上的 debug page
+   5. 開啓 VS Code 的 Debug 
 
 #### 問題 & 之後
 
-1. 可以找出並對比 Expo 和 React Native CLI 的不同。
+1. 可以找出並對比 Expo 和 React Native CLI 的不同
 2. 解決 ubuntu 不能正確安裝 android 模擬器問題
+
+## No.2: Fundamental Concepts & Layout 
+
+### 2021-01-20（晚上）
+
+#### 筆記
+
+1. React Native 中的 `<View>` 就是 React 中的 `<di>`
+2. 要善用 Platform API 來區分不同平臺之間的開發差別，要留意哪些 API 是只能用在 Android，哪些是只能用在 iOS
+3. `StylesSheet` 最好和 Js 文件放在一起，方便更改
+4. `<View style={[styles.container, containerStyle]}>` 中的 `containerStyle` 會覆蓋 `styles.container ` 的內容
+5. Flex 各參數的用法
+
+#### 重點
+
+1. 要熟悉 React Native 中的 API 用法
+2. 要善用 `@react-native-community/hooks`
+
+#### Stop @ Layout 10-Exercises
