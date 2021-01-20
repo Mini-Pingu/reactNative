@@ -89,7 +89,7 @@
 
 #### 筆記
 
-1. React Native 中的 `<View>` 就是 React 中的 `<di>`
+1. React Native 中的 `<View>` 就是 React 中的 `<div>`
 2. 要善用 Platform API 來區分不同平臺之間的開發差別，要留意哪些 API 是只能用在 Android，哪些是只能用在 iOS
 3. `StylesSheet` 最好和 Js 文件放在一起，方便更改
 4. `<View style={[styles.container, containerStyle]}>` 中的 `containerStyle` 會覆蓋 `styles.container ` 的內容
