@@ -159,5 +159,3 @@
 ### 2021-01-21 （晚上）
 
 #### 筆記
-
-**Stop @  6- Encapsulating Styles**
