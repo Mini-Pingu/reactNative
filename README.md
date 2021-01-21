@@ -100,4 +100,56 @@
 1. 要熟悉 React Native 中的 API 用法
 2. 要善用 `@react-native-community/hooks`
 
-#### Stop @ Layout 10-Exercises
+## No.3: Layout 
+
+### 2020-01-21（早上）
+
+#### 筆記
+
+1. `justifyContent` 是 x 軸上控制位置的參數，`alignItems` 是 y 軸上控制位置的參數
+2. `flex` 是必要參數，`position` 和 `top` 等參數是控制單個 component 位置的最好參數
+3. `app.json` 中 `expo` 中的 ` "orientation": "protrait"` 可以控制應用的橫豎屏的切換
+   - protrait: 豎屏
+   - landscape: 橫屏
+   - default: 自動偵測
+
+#### 重點
+
+1. 將一些重要並且經常要修改的參數放在另一個 config 的 folder 裏，主文件只是負責引入就好了
+
+2. 注意項目架構
+
+3. 目前架構
+
+   ```shell
+   .
+   ├── app
+   ├── App.js
+   ├── app.json
+   ├── babel.config.js
+   ├── jsconfig.json
+   ├── node_modules
+   ├── package.json
+   └── yarn.lock
+   ```
+
+   ```shell
+   .
+   ├── assets
+   │   ├── adaptive-icon.png
+   │   ├── background.jpg
+   │   ├── chair.jpg
+   │   ├── favicon.png
+   │   ├── icon.png
+   │   ├── logo-red.png
+   │   └── splash.png
+   ├── config
+   │   └── colors.js
+   └── screens
+       ├── ViewImageScreen.js
+       └── WelcomeScreen.js
+   ```
+
+#### 問題 & 之後
+
+1. 每次完成單個 feature 之後，最好要 Refactor d code
