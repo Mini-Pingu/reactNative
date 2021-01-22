@@ -255,3 +255,5 @@
    - `styles.js` 和 xxx.android.js 要分開
    - 每個 component 都要有 `index.js ` 來作爲 export 口
    - `screens` 就類似 React 的 `views`
+
+**stop @ Lists**
