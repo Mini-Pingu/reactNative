@@ -30,7 +30,7 @@
 
 1. node > 12
 
-2. 電腦安裝 
+2. 電腦安裝
 
    - expo
 
@@ -71,19 +71,19 @@
 #### 重點
 
 1. 在 VS Code 上打 Log
-2. ***在 VS Code 上 debug*** 
+2. **_在 VS Code 上 debug_**
    1. 在 VS Code 的 debug 中按 create a launch.json
    2. 選擇 Attach to packager
    3. 在 VS Code 的 Settings 的 Users 中，修改 react-native.packager.port 改爲 19000 (啓動 Expo 時，Chrome 上顯示 debug 的端口)
    4. 關閉 Chrome 上的 debug page
-   5. 開啓 VS Code 的 Debug 
+   5. 開啓 VS Code 的 Debug
 
 #### 問題 & 之後
 
 1. 可以找出並對比 Expo 和 React Native CLI 的不同
 2. 解決 ubuntu 不能正確安裝 android 模擬器問題
 
-## No.2: Fundamental Concepts & Layout 
+## No.2: Fundamental Concepts & Layout
 
 ### 2021-01-20（晚上）
 
@@ -100,7 +100,7 @@
 1. 要熟悉 React Native 中的 API 用法
 2. 要善用 `@react-native-community/hooks`
 
-## No.3: Layout 
+## No.3: Layout
 
 ### 2021-01-21（早上）
 
@@ -156,11 +156,13 @@
 
 ## No.4 Styling
 
-### 2021-01-21 （晚上）& 2021-01-22（早上）
+### 2021-01-21 （晚上）& 2021-01-22（早上）& 2021-01-22（晚上）
 
 #### 筆記
 
 1. 可以在 [這裏](https://icons.expo.fyi/) 選擇更多的 icon
+2. 留意 stylesSheet 中`overflow` 的用法
+3. UI 庫推介使用 [React Native Elements](https://reactnativeelements.com/) 或者 [@expo/vector-icons](https://icons.expo.fyi/)
 
 #### 重點
 
@@ -191,9 +193,9 @@
    import React from "react";
    import { Text, View, StyleSheet } from "react-native";
    import { AntDesign } from "@expo/vector-icons";
-   
+
    import AppText from "./app/components/AppText";
-   
+
    export default function App() {
      return (
        <View style={styles.container}>
@@ -250,9 +252,6 @@
 
    - 將一些常變化的 參數 添加到 `config ` 的文件夾裏
    - 每個 component 都要區分出 android 和 iOS 的版本
-   - `styles.js`  和 xxx.android.js 要分開
+   - `styles.js` 和 xxx.android.js 要分開
    - 每個 component 都要有 `index.js ` 來作爲 export 口
-   - `screens`  就類似 React 的 `views`
-
-**Stop @ 13- Building the Card Component**
-
+   - `screens` 就類似 React 的 `views`
