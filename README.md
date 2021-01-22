@@ -156,6 +156,103 @@
 
 ## No.4 Styling
 
-### 2021-01-21 （晚上）
+### 2021-01-21 （晚上）& 2021-01-22（早上）
 
 #### 筆記
+
+1. 可以在 [這裏](https://icons.expo.fyi/) 選擇更多的 icon
+
+#### 重點
+
+1. 移動平臺之間的 styles 顯示的不同是重點
+
+   ```
+   ├── assets
+   │   ├── adaptive-icon.png
+   │   ├── background.jpg
+   │   ├── chair.jpg
+   │   ├── favicon.png
+   │   ├── icon.png
+   │   ├── logo-red.png
+   │   └── splash.png
+   ├── components
+   │   ├── AppText.android.js // 根據平臺不同，只要在後綴之前添加 平臺 名稱就好
+   │   └── AppText.ios.js //
+   ├── config
+   │   └── colors.js
+   └── screens
+       ├── ViewImageScreen.js
+       └── WelcomeScreen.js
+   ```
+
+2. 在 App.js 中 import 也會進行簡單的選擇
+
+   ```react
+   import React from "react";
+   import { Text, View, StyleSheet } from "react-native";
+   import { AntDesign } from "@expo/vector-icons";
+   
+   import AppText from "./app/components/AppText";
+   
+   export default function App() {
+     return (
+       <View style={styles.container}>
+         {/* <View style={styles.container2}> ...
+         // Other codes...
+   ```
+
+3. 要善用 styles 的覆蓋性
+
+   ```react
+   # AppText.android.js
+   function AppText({ children, style }) {
+     return <Text style={[styles.text, style]}>{children}</Text>; // [styles.text, style]
+   }
+   ```
+
+   ```react
+   # App.js
+   <AppText style={styles.subTitle}>{subTitle}</AppText> // 這樣子就可以傳入獨有的 styles
+   ```
+
+4. app 裏的文件架構
+
+   ```shell
+   .
+   ├── assets
+   │   ├── adaptive-icon.png
+   │   ├── background.jpg
+   │   ├── chair.jpg
+   │   ├── favicon.png
+   │   ├── icon.png
+   │   ├── logo-red.png
+   │   └── splash.png
+   ├── components
+   │   ├── AppButton
+   │   │   ├── AppButton.android.js // 類似 html
+   │   │   ├── index.js // export 口
+   │   │   └── styles.js // css
+   │   ├── AppCard
+   │   │   ├── AppCard.android.js
+   │   │   ├── index.js
+   │   │   └── styles.js
+   │   └── AppText
+   │       ├── AppText.android.js
+   │       ├── AppText.ios.js
+   │       ├── index.js
+   │       └── styles.js
+   ├── config
+   │   └── colors.js
+   └── screens // Views
+       ├── ViewImageScreen.js
+       └── WelcomeScreen.js
+   ```
+
+   - 將一些常變化的 參數 添加到 `config ` 的文件夾裏
+   - 每個 component 都要區分出 android 和 iOS 的版本
+   - `styles.js`  和 xxx.android.js 要分開
+   - 每個 component 都要有 `index.js ` 來作爲 export 口
+   - `screens`  就類似 React 的 `views`
+
+**Stop @ 13- Building the Card Component**
+
