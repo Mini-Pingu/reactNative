@@ -256,4 +256,18 @@
    - 每個 component 都要有 `index.js ` 來作爲 export 口
    - `screens` 就類似 React 的 `views`
 
-**stop @ Lists**
+## No.5 Lists
+
+### 2021-01-23 （早上）
+
+#### 筆記
+
+1. 可以從 [expo-constant](https://docs.expo.io/versions/latest/sdk/constants/) 中獲取機器原始數據，如平臺類型等
+
+#### 重點
+
+#### 代碼
+
+#### 跟進問題
+
+1. 把 VS Code 中的 **ES7 React/Redux/GraphQL/React-Native snippets extension** 看熟悉
