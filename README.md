@@ -258,11 +258,13 @@
 
 ## No.5 Lists
 
-### 2021-01-23 （早上）
+### 2021-01-23（早上）& 2020-01-23（晚上）
 
 #### 筆記
 
 1. 可以從 [expo-constant](https://docs.expo.io/versions/latest/sdk/constants/) 中獲取機器原始數據，如平臺類型等
+2. 凡系要重復兩次使用的 component 都要單獨寫出來，並且要寫到全世界通用的模式
+3. Expo 的 API 要學習：[API Reference](https://docs.expo.io/versions/latest/)
 
 #### 重點
 
