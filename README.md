@@ -326,4 +326,27 @@
    }
    ```
 
+
+### 2021-01-26（晚上）
+
+#### 筆記
+
+1. 可以在 `./config/styles` 中將其他不同風格的 `styles.js` 組合在一起，方便其他 component 取用，和提高可讀性
+
+   ```react
+   import { Platform } from "react-native";
    
+   import colors from "./colors";
+   
+   export default { // default
+     text: {
+       color: colors.dark,
+       fontSize: 18,
+       fontFamily: "Roboto",
+     },
+   };
+   ```
+
+2. 可以選擇用 expo 的 [DateTimePicker](https://docs.expo.io/versions/latest/sdk/date-time-picker/) 來代替 react-native 的 DateTimePicker
+
+#### 重點
