@@ -304,3 +304,26 @@
 ## No.6 Input Components (34m)
 
 ### 2021-01-25 （早上）
+
+#### 筆記
+
+#### 重點
+
+1. 傳參時可以使用 `...otherProps` 來將剩下全部的參數一模一樣地傳下去
+
+   ```react
+   // App.js
+   <AppTextInput placeholder="hihi" />
+   
+   // AppTextInput.android.js
+   function AppTextInput({ icon, ...otherProps }) { // ...otherProps
+     return (
+       <View style={styles.container}>
+         {icon && <MaterialCommunityIcons name={icon} />}
+         <TextInput style={styles.textInput} {...otherProps} />
+       </View>
+     );
+   }
+   ```
+
+   
