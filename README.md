@@ -273,3 +273,34 @@
 #### 跟進問題
 
 1. 把 VS Code 中的 **ES7 React/Redux/GraphQL/React-Native snippets extension** 看熟悉
+
+### 2021-01-25（早上）
+
+#### 筆記
+
+1. 可以參考 mosh，現在 prop components 上規定好了 children component 要獨特展示什麼東西，對應設定什麼參數，如：
+
+   ```react
+   // 先構想好要展示什麼內容
+   // 接着設定 props 的參數
+   <Icon name="email" size={50} backgroundColor="red" iconColor="white" />
+   
+   // 最後在 children 中設定
+   function Icon({name, //...}) {
+     return ()
+   }
+   ```
+
+#### 重點
+
+1. `rsf` => 創建 React Functional Content for starting a file
+
+1. 一定要注意 每個 components 都要保持獨立性，保持可復性要高
+
+#### 代碼
+
+#### 跟進問題
+
+## No.6 Input Components (34m)
+
+### 2021-01-25 （早上）
