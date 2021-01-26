@@ -350,3 +350,13 @@
 2. 可以選擇用 expo 的 [DateTimePicker](https://docs.expo.io/versions/latest/sdk/date-time-picker/) 來代替 react-native 的 DateTimePicker
 
 #### 重點
+
+### 2021-01-27（早上）
+
+#### 筆記
+
+1. 使用 [Formik](https://formik.org/ ) 來爲 React 和 React Native 來創建訂單
+
+#### 重點
+
+1. 一定要從一開始就確定好一些必要並且會重復使用的 components，統一好規範，方便之後重復使用。或者可以找找有沒有 React Native 版的 Shards IO。
